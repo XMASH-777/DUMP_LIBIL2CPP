@@ -53,12 +53,7 @@ objdump -x libil2cpp.so
 ```
 readelf -a libil2cpp.so
 ```
-ได้ครับ! หากคุณไม่มี PC และต้องการ dump ไฟล์ libil2cpp.so ไปยังโฟลเดอร์เดิม (/storage/emulated/0/gerena.mask/) คุณสามารถทำงานทั้งหมดผ่าน Termux ได้โดยใช้เครื่องมือใน Termux เอง:
-
-
----
-
-วิธีการ Dump และบันทึกไฟล์กลับไปยังโฟลเดอร์เดิม
+**ได้ครับ! หากคุณไม่มี PC และต้องการ dump ไฟล์ libil2cpp.so ไปยังโฟลเดอร์เดิม (/storage/emulated/0/gerena.mask/) คุณสามารถทำงานทั้งหมดผ่าน Termux ได้โดยใช้เครื่องมือใน Termux เอง:*
 
 ## 1. เตรียมความพร้อม
 
@@ -91,11 +86,6 @@ pkg install radare2
 ## 4. วิเคราะห์และ Dump ไฟล์
 
 ใช้ objdump:
-
-ดูรายละเอียดไฟล์หรือ dump symbol:
-```
-objdump -d libil2cpp.so > dump_libil2cpp.txt
-```
 ไฟล์ที่ได้ (dump_libil2cpp.txt) จะเป็นข้อมูล Assembly ที่ dump ออกมา
 
 
@@ -106,9 +96,6 @@ objdump -d libil2cpp.so > dump_libil2cpp.txt
 r2 -A libil2cpp.so
 ```
 ใช้คำสั่งใน Radare2 เพื่อดูโครงสร้างหรือ dump ข้อมูล เช่น:
-
-pdf @main > dump_main.txt  # Dump ฟังก์ชัน main
-
 
 5. บันทึกไฟล์ที่ Dump กลับไปยังโฟลเดอร์เดิม
 
