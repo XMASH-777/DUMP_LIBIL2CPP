@@ -7,7 +7,7 @@ pkg install coreutils -y
 pkg install termux-storage-api -y
 termux-setup-storage
 ```
-**ຄວນສ້າງໂຟເດີເຊັ່ນ (/storage/emulated/0/MODFF)ເພື່ອແປງໄຟ*
+**ຄວນສ້າງໂຟເດີເຊັ່ນ (/storage/emulated/0/MODFF)ເພື່ອແປງໄຟ**
 ```
 mkdir -p /storage/emulated/0/MODFF
 ```
