@@ -1,4 +1,4 @@
-## DUMP SETUP1
+## DUMP SETUP1 .so
 
 ```
 pkg update && pkg upgrade -y
@@ -15,5 +15,16 @@ mkdir -p /storage/emulated/0/MODFF
 ```
 cd /storage/emulated/0/MODFF/
 objdump -d libInjected.so > /storage/emulated/0/MODFF/libInjected_dump.txt
+```
+**หากต้องการดูเฉพาะส่วน เนื้อหา . 5o (เช่น ชื่อฟังก์ชันหรือ สตริงที่ใช้ในไฟล์):
+• ดูเฉพาะสตริง:**
+
+```
+strings libInjected.so > /storage/emulated/0/MODFF/libInjected_strings.txt
+```
+
+**ເບິ່ງສ່ວນຫົວຂອງໄຟລ໌**
+```
+readelf -h libInjected.so > /storage/emulated/0/MODFF/libInjected_headers.txt
 ```
 
