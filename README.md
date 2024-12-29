@@ -18,6 +18,7 @@ objdump -d libInjected.so > /storage/emulated/0/MODFF/libInjected_dump.txt
 ```
 
 [ສຳເລັດ](#ສຳເລັດ)
+
 **หากต้องการดูเฉพาะส่วน เนื้อหา . 5o (เช่น ชื่อฟังก์ชันหรือ สตริงที่ใช้ในไฟล์):
 • ดูเฉพาะสตริง:**
 
